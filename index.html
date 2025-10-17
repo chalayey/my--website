@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Skills</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <div> <h1>well come </h1></div>
+            <div class="header-text">
+<h1>Hi I'm <span>chala</span>  <br>From Ethiopia</h1>
+                  <br><p>web developer<br>application
+                     developer<br>programmer</p><br>
+                  
+                  
+                  
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+    <p style="background-image: url(chala.jpg);"></p>
+
+    <!---------------about------->
+  <div id="About">
+    <div class="container">
+        <div class="row">
+        <div class="about-col-1">
+        <img src="mn.jpg">
+        </div>
+        <div class="about-col-2">
+            <h2 class="sub-title">About Me</h2>
+<p>I'm chala from Ethiopia I am a web developer and application developer and programmer</p>
+      <div class="table-titles">
+        <p class="table-links active-link" onclick="opentab('skills')">skills</p>
+        <p class="table-links" onclick="opentab('education')">education</p>
+        <p class="table-links" onclick="opentab('background')">background</p>
+      </div> 
+        <div class="table-contents active-tab" id="skills">
+            
+                <ul>
+                    <li><span>web developer</span><br> website developer<br>web interface</li>
+                    <li><span>progammer</span><br>c++<br>java</li>
+                    <li><span>database</span><br> data manager</li>
+                    
+                </ul>
+            </div>
+            <div class="table-contents" id="education">
+            
+                <ul>
+                    <li><span>I LEARED </span><br>C++<br>java<br>database</li>
+                   
+                    
+                </ul>
+            </div>
+                <div class="table-contents" id="background">
+            
+                <ul>
+                    <li><span>high school diploma</span><br>Nekemte</li>
+                    <li><span>Bsc in computer science</span><br>Woliata sodo</li>
+                    
+                    
+                </ul>
+            </div>
+      
+           
+        </div>
+        </div>
+    </div>
+  </div>
+    <!------------------skills------->
+    <div id="skills">
+        <div class="container">
+            <h2 class="sub-title">My Skills</h2>
+            <div class="skills-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Developer</h2>
+                    <p>html<br>css<br>java script<br>php</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>Application Developer</h2>
+                    <p>java<br>c++<br>python</p>
+                    <a href="#">Learn more</a>
+
+            </div>
+                <div>
+                    <h2>Database</h2>
+                    <p>mysql<br>sql server</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+    </div>
+    <!------------------projects------->
+    <div id="projects">
+        <div class="container">
+            <h2 class="sub-title">My Projects</h2>
+            <div class="projects-list">
+                <div class="projects-item">
+                    <img src="img.1.jpg">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>This is my first project we develop social media app</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="projects-item">
+                    <img src="img.2.jpg">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>This is my second project we develop music app</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                <div class="projects-item">
+                    <img src="img.3.jpg">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>This is my third project we develop online shopping app</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                </div>
+                
+                <a href="#" class="btn">See more</a>
+            </div>
+    </div>
+    <!------------------contact------->
+    <div id="contact">
+        <div class="container">
+            <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1><br>
+            <p>Email:chalatemesgen21@gmail.com</p><br>
+            <p>phone:+251930405885</p><br>
+             <a href="@chalayey">Telegram</a>
+            <div class="social-icons">
+                </div>
+                <a href="#"><i class="btn btn2">Download</i></a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" class="text-box" placeholder="Your Name"required>
+                        <input type="text" class="text-box" placeholder="Your Email"required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Send Message</button>
+                    </form>
+                    </div>
+                    </div>
+                    </div>
+                    
+                
+  <script>
+    function opentab(tabname){
+        var tablinks=document.getElementsByClassName("table-links");
+        var tabcontents=document.getElementsByClassName("table-contents");
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+</body>
+</html>
